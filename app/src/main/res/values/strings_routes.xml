@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Routes screen: rule list, rule cards, editor dialog. -->
+<resources>
+    <!-- List -->
+    <string name="routes_new_rule">New rule</string>
+    <string name="routes_edit_rule">Edit rule</string>
+    <string name="routes_hint_priority">Priority top-down · applied on reconnect</string>
+    <string name="routes_empty_title">No routing rules</string>
+    <string name="routes_empty_hint">Traffic flow: DNS → user rules → bypass-LAN → proxy.\nRules apply on (re)connect.</string>
+
+    <!-- Rule card -->
+    <string name="routes_rule_unnamed">(unnamed rule)</string>
+    <plurals name="routes_sum_domains">
+        <item quantity="one">%1$d domain</item>
+        <item quantity="other">%1$d domains</item>
+    </plurals>
+    <plurals name="routes_sum_cidrs">
+        <item quantity="one">%1$d CIDR</item>
+        <item quantity="other">%1$d CIDRs</item>
+    </plurals>
+    <plurals name="routes_sum_apps">
+        <item quantity="one">%1$d app</item>
+        <item quantity="other">%1$d apps</item>
+    </plurals>
+    <string name="routes_sum_ports">ports %1$s</string>
+    <string name="routes_sum_no_matchers">no matchers — inactive</string>
+    <string name="routes_cd_move_up">Move up</string>
+    <string name="routes_cd_move_down">Move down</string>
+
+    <!-- Outbound labels -->
+    <string name="routes_outbound_proxy">Proxy</string>
+    <string name="routes_outbound_direct">Direct</string>
+    <string name="routes_outbound_block">Block</string>
+
+    <!-- Delete dialog -->
+    <string name="routes_delete_title">Delete rule?</string>
+    <string name="routes_delete_body">Remove “%1$s”.</string>
+
+    <!-- Editor dialog -->
+    <string name="routes_section_match">Match</string>
+    <string name="routes_section_outbound">Outbound</string>
+    <string name="routes_field_name">Name</string>
+    <string name="routes_field_domains">Domains (one per line)</string>
+    <string name="routes_field_domains_hint">suffix by default · full:/keyword:/regexp: prefixes</string>
+    <string name="routes_field_cidrs">IP CIDRs (one per line)</string>
+    <string name="routes_field_ports">Ports (comma, 80 or 1000:2000)</string>
+    <string name="routes_field_packages">Packages (one per line)</string>
+</resources>

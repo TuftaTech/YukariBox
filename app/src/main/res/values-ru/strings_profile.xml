@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_section_account">Аккаунт</string>
+    <string name="profile_section_general">Общие</string>
+
+    <string name="profile_no_group">Подписки пока нет</string>
+    <string name="profile_manual_group">Добавлены вручную</string>
+    <string name="profile_updating">Обновляем…</string>
+
+    <string name="profile_subscriptions">Подписки</string>
+    <string name="profile_update_now">Обновить сейчас</string>
+    <string name="profile_backup">Резервная копия</string>
+
+    <string name="profile_language">Язык приложения</string>
+    <string name="profile_appearance">Оформление</string>
+    <string name="profile_start_on_boot">Запуск при загрузке</string>
+    <string name="profile_routing">Правила маршрутизации</string>
+    <string name="profile_advanced">Расширенные настройки</string>
+
+    <string name="profile_nickname">Ваше имя</string>
+    <string name="profile_nickname_field">Имя</string>
+    <string name="profile_nickname_hint">До %1$d символов. Оставьте пустым, чтобы вернуть встроенное имя.</string>
+    <string name="profile_avatar_remove">Убрать вашу картинку</string>
+    <string name="profile_avatar_failed">Эту картинку не удалось использовать. Выберите другую.</string>
+
+    <string name="theme_system">Системное</string>
+    <string name="theme_light">Светлое</string>
+    <string name="theme_dark">Тёмное</string>
+
+    <string name="language_system">Системный</string>
+</resources>

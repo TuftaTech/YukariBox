@@ -1,0 +1,46 @@
+# detekt configuration for YukariBox — layered on top of detekt's default rules
+# (run with --build-upon-default-config). Tuned for a Jetpack Compose codebase:
+# composables are legitimately PascalCase, long, and full of dp/alpha literals,
+# so the rules that fight that idiom are relaxed here rather than baselined, to
+# keep the gate meaningful for future UI work. Anything else is grandfathered via
+# config/detekt/baseline.xml.
+
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+
+config:
+  validation: true
+  warningsAsErrors: false
+
+complexity:
+  LongMethod:
+    # Composable layout functions are naturally long; don't penalise them.
+    ignoreAnnotated: ['Composable', 'Preview']
+  CyclomaticComplexMethod:
+    ignoreAnnotated: ['Composable']
+  LongParameterList:
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    thresholdInFiles: 30
+    thresholdInClasses: 20
+    thresholdInObjects: 20
+    thresholdInEnums: 10
+  NestedBlockDepth:
+    ignoreAnnotated: ['Composable']
+
+naming:
+  FunctionNaming:
+    # @Composable functions are PascalCase by Compose convention.
+    ignoreAnnotated: ['Composable']
+  TopLevelPropertyNaming:
+    constantPattern: '[A-Z][_A-Za-z0-9]*'
+
+style:
+  MagicNumber:
+    # dp / alpha / weight literals are pervasive and meaningful in Compose UI.
+    active: false
+  UnusedPrivateMember:
+    ignoreAnnotated: ['Preview']
+  ReturnCount:
+    max: 4

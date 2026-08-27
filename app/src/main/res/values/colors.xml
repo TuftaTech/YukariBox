@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window-level token for cold-start chrome. The real scheme lives in
+         ui/theme/Color.kt; Compose cannot reach this surface, so this file is the one
+         place the palette is duplicated and it has to be kept in sync by hand.
+         Keep equal to Page. -->
+    <color name="yukari_window_background">#FEFEFE</color>
+
+    <!-- Home-screen widget chrome. Ink in both themes, exactly like the app's bottom
+         bar: a widget that flips to white in dark mode would be the brightest thing on
+         the user's home screen. Keep equal to InkFill / Paper. -->
+    <color name="yukari_widget_bg">#0D0D0D</color>
+    <color name="yukari_widget_on_bg">#FEFEFE</color>
+</resources>

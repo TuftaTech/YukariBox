@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stats_session_total">Всего за сессию</string>
+    <string name="stats_breakdown_title">По маршрутам</string>
+    <string name="stats_proxy">Прокси-узел</string>
+    <string name="stats_direct">Напрямую</string>
+    <string name="stats_down">↓ Приём</string>
+    <string name="stats_up">↑ Отдача</string>
+    <string name="stats_rate">↓ Сейчас</string>
+    <string name="stats_percent">%1$d%%</string>
+    <string name="stats_note">Трафик сгруппирован по исходящему маршруту — активный узел и трафик, идущий напрямую.</string>
+    <string name="stats_empty_title">Нет подключения</string>
+    <string name="stats_empty_hint">Подключитесь, чтобы увидеть трафик по маршрутам.</string>
+</resources>

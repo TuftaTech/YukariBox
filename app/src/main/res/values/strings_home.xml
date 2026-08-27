@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home: the connect circle, its two labels, the security line, the location card
+     and the connected banner. Also the drawer header, which reads from the same
+     "which group is active" state. -->
+<resources>
+    <!-- The app's own name for its persona. Not translated: it is a name. -->
+    <string name="brand_persona" translatable="false">Yukari</string>
+
+    <!-- The word above the circle. Uppercased by the caller. -->
+    <string name="state_connected">Connected</string>
+    <string name="state_connecting">Connecting</string>
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_disconnecting">Disconnecting</string>
+    <!-- Kill switch armed: the tunnel collapsed and a blocking TUN drops every packet. -->
+    <string name="state_blocked">Traffic blocked</string>
+    <!-- Kill switch could NOT be armed. Never phrase this as "blocked". -->
+    <string name="state_unprotected">Not protected</string>
+    <string name="state_no_node">No server selected</string>
+    <!-- Sentence case, for the connected banner's first line. -->
+    <string name="state_connected_title">Connected</string>
+
+    <!-- The caption below the circle. It names the action the tap performs. -->
+    <string name="tap_to_connect">Tap to connect</string>
+    <!-- The caption under the circle is the action, not the state: the word above it
+         already says CONNECTING, and this tap cancels the attempt. -->
+    <string name="tap_connecting">Tap to cancel</string>
+    <string name="tap_to_disconnect">Tap to disconnect</string>
+    <string name="tap_disconnecting">Tearing the tunnel down</string>
+    <string name="tap_to_reconnect">Tap to reconnect</string>
+
+    <!-- The security line under the location card. Four situations, four sentences.
+         The state word carries Bold — the reference sets the whole sentence in one ink
+         and bolds the word, it does not tint it — so the markup is escaped here and
+         parsed with AnnotatedString.fromHtml at the one call site (HomeScreen's
+         SecurityLine). Unescaped <b> would be stripped by getString before Compose ever
+         saw it. Translators: keep the tags around the state word, nothing else. -->
+    <string name="security_protected">Your connection is &lt;b&gt;protected&lt;/b&gt;</string>
+    <string name="security_connecting">Checking the tunnel…</string>
+    <string name="security_unprotected">Your connection is &lt;b&gt;not protected&lt;/b&gt;</string>
+    <string name="security_blocked">Traffic is &lt;b&gt;blocked&lt;/b&gt; — nothing is leaving this device</string>
+    <string name="security_protected_partial">Protected — &lt;b&gt;some apps bypass&lt;/b&gt; the tunnel</string>
+    <string name="security_proxy_only">&lt;b&gt;Local proxy only&lt;/b&gt; — nothing is captured except apps you pointed at 127.0.0.1:2080</string>
+    <string name="security_failed">&lt;b&gt;Not protected&lt;/b&gt; — the kill switch could not be armed</string>
+
+    <!-- Location card, when no server has been picked yet. -->
+    <string name="home_location_empty_title">Optimal location</string>
+    <string name="home_location_empty_hint">Choose a server to connect to</string>
+
+    <!-- Fail-closed card: the explanation and the two actions. "Unblock" belongs to the
+         blocked state only — when the kill switch could not be armed there is no block
+         being held, so that card offers nothing but the reconnect and its sentence must
+         not name a control that is not there. -->
+    <string name="home_blocked_actions">The tunnel collapsed and every packet is being dropped on purpose. Reconnect to try again, or unblock to give up the block and go back to an unprotected connection.</string>
+    <string name="home_unprotected_actions">The tunnel collapsed and the kill switch could not be armed, so traffic is leaving unproxied. Reconnect to try again, or turn the network off until you can.</string>
+    <string name="btn_reconnect_short">Reconnect</string>
+    <string name="btn_release_short">Unblock</string>
+    <!-- Corrupt-store notices. A store that could not be read has reset to defaults,
+         and an empty server list looks exactly like a fresh install. -->
+    <string name="notice_core_failed">The VPN core could not be initialized, so connecting is not possible. Restart the app; if that does not help, reinstall it.</string>
+    <string name="notice_nodes_corrupt">Saved servers could not be read and were reset. The file was kept as subscriptions.json.corrupt.</string>
+    <string name="notice_settings_corrupt">Settings could not be read and were reset to defaults. The file was kept as settings.json.corrupt.</string>
+    <string name="notice_routes_corrupt">Routing rules could not be read and were reset. The file was kept as routes.json.corrupt.</string>
+
+    <!-- Drawer footer. The header's two counts are shared with the profile card and
+         live in strings_app.xml (counts_servers / counts_groups / counts_pair /
+         counts_empty) — one phrasing, read by both surfaces. -->
+    <string name="drawer_version">Version %1$s</string>
+
+    <!-- Share Yukari. -->
+    <string name="share_text">YukariBox — a sing-box VPN client for Android. Bring your own servers.</string>
+</resources>

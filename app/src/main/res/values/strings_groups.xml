@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Groups screen: group list, create/edit dialog, delete confirmation. -->
+<resources>
+    <!-- Group list -->
+    <string name="groups_title">My groups</string>
+    <string name="groups_empty_title">No groups yet</string>
+    <string name="groups_empty_hint">Create a manual group or add a subscription</string>
+    <string name="groups_kind_manual">Manual</string>
+    <string name="groups_kind_subscription">Subscription</string>
+    <!-- Subtitle of a group in the "move to another group" list. -->
+    <string name="groups_count">%1$d server(s)</string>
+
+    <!-- Group menu -->
+    <string name="groups_menu_update">Update</string>
+
+    <!-- Create / edit dialog -->
+    <string name="groups_dialog_new_title">New group</string>
+    <string name="groups_dialog_edit_title">Edit group</string>
+    <string name="groups_field_name">Name</string>
+    <string name="groups_field_name_optional">Name (optional)</string>
+    <string name="groups_field_url">Subscription URL (https)</string>
+    <string name="groups_url_hint">Nodes are fetched from the URL on save and on every update.</string>
+
+    <!-- Delete confirmation -->
+    <string name="groups_delete_title">Delete group?</string>
+    <string name="groups_delete_body">Remove “%1$s” and its %2$d node(s).</string>
+</resources>

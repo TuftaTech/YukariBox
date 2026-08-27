@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- List -->
+    <string name="routes_new_rule">Новое правило</string>
+    <string name="routes_edit_rule">Изменить правило</string>
+    <string name="routes_hint_priority">Приоритет сверху вниз · применяется при переподключении</string>
+    <string name="routes_empty_title">Нет правил маршрутизации</string>
+    <string name="routes_empty_hint">Поток трафика: DNS → правила пользователя → bypass-LAN → прокси.\nПравила применяются при (пере)подключении.</string>
+
+    <!-- Rule card -->
+    <string name="routes_rule_unnamed">(без названия)</string>
+    <plurals name="routes_sum_domains">
+        <item quantity="one">%1$d домен</item>
+        <item quantity="few">%1$d домена</item>
+        <item quantity="many">%1$d доменов</item>
+        <item quantity="other">%1$d домена</item>
+    </plurals>
+    <plurals name="routes_sum_cidrs">
+        <item quantity="one">%1$d CIDR</item>
+        <item quantity="few">%1$d CIDR</item>
+        <item quantity="many">%1$d CIDR</item>
+        <item quantity="other">%1$d CIDR</item>
+    </plurals>
+    <plurals name="routes_sum_apps">
+        <item quantity="one">%1$d приложение</item>
+        <item quantity="few">%1$d приложения</item>
+        <item quantity="many">%1$d приложений</item>
+        <item quantity="other">%1$d приложения</item>
+    </plurals>
+    <string name="routes_sum_ports">порты %1$s</string>
+    <string name="routes_sum_no_matchers">нет условий — неактивно</string>
+    <string name="routes_cd_move_up">Переместить вверх</string>
+    <string name="routes_cd_move_down">Переместить вниз</string>
+
+    <!-- Outbound labels -->
+    <string name="routes_outbound_proxy">Прокси</string>
+    <string name="routes_outbound_direct">Напрямую</string>
+    <string name="routes_outbound_block">Блок</string>
+
+    <!-- Delete dialog -->
+    <string name="routes_delete_title">Удалить правило?</string>
+    <string name="routes_delete_body">Удалить «%1$s».</string>
+
+    <!-- Editor dialog -->
+    <string name="routes_section_match">Условия</string>
+    <string name="routes_section_outbound">Направление</string>
+    <string name="routes_field_name">Название</string>
+    <string name="routes_field_domains">Домены (по одному в строке)</string>
+    <string name="routes_field_domains_hint">по суффиксу по умолчанию · префиксы full:/keyword:/regexp:</string>
+    <string name="routes_field_cidrs">IP CIDR (по одному в строке)</string>
+    <string name="routes_field_ports">Порты (через запятую, 80 или 1000:2000)</string>
+    <string name="routes_field_packages">Пакеты (по одному в строке)</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile: the user card and the two settings groups on it.
+
+     The mockup's rows describe a commercial VPN with sign-in and a paid tier. This
+     client has neither, so each row is bound to the thing it actually corresponds
+     to and named for that: the subscription is the account, its refresh is the
+     renewal, and the backup is the only copy that exists off this device.
+
+     Rows carry no summary line: the reference's settings rows are single-line, and
+     what a row has to report goes in its trailing value instead. -->
+<resources>
+    <string name="profile_section_account">Account</string>
+    <string name="profile_section_general">General</string>
+
+    <!-- The card's second line is the mockup's "Free Plan" slot filled with real data —
+         how many servers and groups this install holds. It reads from the shared
+         counts_* plurals in strings_app.xml, the same ones the drawer header uses. -->
+
+    <!-- Trailing value of the "Update now" row. -->
+    <string name="profile_no_group">No subscription yet</string>
+    <string name="profile_manual_group">Added by hand</string>
+    <string name="profile_updating">Updating…</string>
+
+    <!-- ACCOUNT -->
+    <string name="profile_subscriptions">Subscriptions</string>
+    <string name="profile_update_now">Update now</string>
+    <string name="profile_backup">Backup and restore</string>
+
+    <!-- GENERAL -->
+    <string name="profile_language">App language</string>
+    <string name="profile_appearance">Appearance</string>
+    <string name="profile_start_on_boot">Start on boot</string>
+    <string name="profile_routing">Routing rules</string>
+    <string name="profile_advanced">Advanced settings</string>
+
+    <!-- The two personalisations on this tab. `brand_persona` is the built-in default. -->
+    <string name="profile_nickname">Your name</string>
+    <string name="profile_nickname_field">Name</string>
+    <string name="profile_nickname_hint">Up to %1$d characters. Leave it empty to go back to the built-in name.</string>
+    <string name="profile_avatar_remove">Remove your picture</string>
+    <string name="profile_avatar_failed">That image could not be used. Pick another one.</string>
+
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Language names are shown in their own language by convention. -->
+    <string name="language_system">System</string>
+    <string name="language_en" translatable="false">English</string>
+    <string name="language_ru" translatable="false">Русский</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Debug-only external control surface. This manifest is merged ONLY into debug
+      builds, so the receiver never ships in release. Lets the app be driven from
+      adb broadcasts (see AdbControlReceiver for the full command reference).
+    -->
+    <application>
+        <receiver
+            android:name="dev.yukaribox.vpn.debug.AdbControlReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="dev.yukaribox.vpn.CONTROL" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

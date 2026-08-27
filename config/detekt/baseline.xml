@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:AdbControlReceiver.kt$AdbControlReceiver$override fun onReceive(context: Context, intent: Intent)</ID>
+    <ID>CyclomaticComplexMethod:AdbControlReceiver.kt$AdbControlReceiver$private fun applySetting(key: String?, value: String?, reconnect: Boolean, context: Context)</ID>
+    <ID>CyclomaticComplexMethod:ConfigBuilder.kt$ConfigBuilder$fun buildOutbound(rawNode: ProxyNode, tag: String, globalAllowInsecure: Boolean = false): JsonObject</ID>
+    <ID>CyclomaticComplexMethod:ConfigBuilder.kt$ConfigBuilder$private fun transportBlock(tr: TransportSettings): JsonObject?</ID>
+    <ID>CyclomaticComplexMethod:NodeRepository.kt$NodeRepository$private fun httpGet(urlStr: String): String</ID>
+    <ID>CyclomaticComplexMethod:ProxyLinkExporter.kt$ProxyLinkExporter$fun export(node: ProxyNode): String</ID>
+    <ID>CyclomaticComplexMethod:ProxyLinkParser.kt$ProxyLinkParser$private fun buildStream(query: Map&lt;String, String&gt;, defaultSecurity: String): Pair&lt;TlsSettings, TransportSettings&gt;</ID>
+    <ID>CyclomaticComplexMethod:SettingsStore.kt$SettingsStore$private fun diff(a: SettingsData, b: SettingsData): String</ID>
+    <ID>LongMethod:ConfigBuilder.kt$ConfigBuilder$fun buildOutbound(rawNode: ProxyNode, tag: String, globalAllowInsecure: Boolean = false): JsonObject</ID>
+    <ID>LongMethod:NodeEditScreen.kt$private fun buildNode( type: ProxyType, name: String, server: String, port: String, uuid: String, password: String, username: String, encryption: String, flow: String, security: String, sni: String, alpn: String, fingerprint: String, allowInsecure: Boolean, realityPbk: String, realitySid: String, network: String, trHost: String, trPath: String, grpcService: String, obfs: String, obfsPassword: String, wgLocal: String, wgPrivate: String, wgPeerPub: String, wgPsk: String, wgMtu: String, wgReserved: String, congestion: String, udpRelay: String, messages: ValidationMessages, ): ProxyNode</ID>
+    <ID>LongMethod:ProxyLinkParser.kt$ProxyLinkParser$private fun parseShadowsocks(body: String): ProxyNode</ID>
+    <ID>LongParameterList:NodeEditScreen.kt$( type: ProxyType, name: String, server: String, port: String, uuid: String, password: String, username: String, encryption: String, flow: String, security: String, sni: String, alpn: String, fingerprint: String, allowInsecure: Boolean, realityPbk: String, realitySid: String, network: String, trHost: String, trPath: String, grpcService: String, obfs: String, obfsPassword: String, wgLocal: String, wgPrivate: String, wgPeerPub: String, wgPsk: String, wgMtu: String, wgReserved: String, congestion: String, udpRelay: String, messages: ValidationMessages, )</ID>
+    <ID>LongParameterList:NodeEditScreen.kt$ValidationMessages$( val portNotNumber: String, val serverRequired: String, val uuidRequired: String, val passwordRequired: String, val methodRequired: String, val privateKeyRequired: String, val peerKeyRequired: String, val invalidInput: String, )</ID>
+    <ID>MatchingDeclarationName:Motion.kt$YukariMotion</ID>
+    <ID>MaxLineLength:BackupManager.kt$BackupManager$Logs.i("Backup", "exported ${NodeRepository.subscriptions.size} group(s), ${RouteRepository.rules.size} rule(s)")</ID>
+    <ID>MaxLineLength:ConfigBuilder.kt$ConfigBuilder$if (node.wgPeerPublicKey.isBlank()) throw UnsupportedConfigException("wireguard: missing peer public key")</ID>
+    <ID>MaxLineLength:NodeEditScreen.kt$Field(stringResource(R.string.node_edit_wg_mtu), wgMtu) { wgMtu = it.filter { c -&gt; c.isDigit() }.take(4) }</ID>
+    <ID>MaxLineLength:NodeEditScreen.kt$require(ShadowsocksMethods.isSupported(encryption.ifBlank { ShadowsocksMethods.DEFAULT })) { messages.methodRequired }</ID>
+    <ID>MaxLineLength:NodeRepository.kt$NodeRepository$throw IllegalStateException("subscription too large (&gt; ${MAX_SUBSCRIPTION_BYTES / 1024 / 1024} MB)")</ID>
+    <ID>MaxLineLength:ProxyLinkExporter.kt$ProxyLinkExporter$append("\"path\":${jsonStr(if (node.transport.network == "grpc") node.transport.grpcServiceName else node.transport.path)},")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.autoConnectOnBoot != b.autoConnectOnBoot) add("autoConnectOnBoot ${a.autoConnectOnBoot}-&gt;${b.autoConnectOnBoot}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.autoUpdateInterval != b.autoUpdateInterval) add("autoUpdateInterval ${a.autoUpdateInterval}-&gt;${b.autoUpdateInterval}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.enableDnsRouting != b.enableDnsRouting) add("enableDnsRouting ${a.enableDnsRouting}-&gt;${b.enableDnsRouting}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.nodeInNotification != b.nodeInNotification) add("nodeInNotification ${a.nodeInNotification}-&gt;${b.nodeInNotification}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.perAppPackages != b.perAppPackages) add("perAppPackages ${a.perAppPackages.size}-&gt;${b.perAppPackages.size}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.perAppProxyInclude != b.perAppProxyInclude) add("perAppInclude ${a.perAppProxyInclude}-&gt;${b.perAppProxyInclude}")</ID>
+    <ID>MaxLineLength:SettingsStore.kt$SettingsStore$if (a.reconnectOnNetworkChange != b.reconnectOnNetworkChange) add("reconnectOnNetworkChange ${a.reconnectOnNetworkChange}-&gt;${b.reconnectOnNetworkChange}")</ID>
+    <ID>NestedBlockDepth:LogReader.kt$LogReader$fun read(maxBytes: Long = 256 * 1024): String</ID>
+    <ID>NestedBlockDepth:NodeRepository.kt$NodeRepository$private fun httpGet(urlStr: String): String</ID>
+    <ID>ThrowsCount:NodeRepository.kt$NodeRepository$private fun httpGet(urlStr: String): String</ID>
+    <ID>ThrowsCount:ProxyLinkParser.kt$ProxyLinkParser$fun parse(link: String): ProxyNode</ID>
+    <ID>ThrowsCount:ProxyLinkParser.kt$ProxyLinkParser$private fun parseShadowsocks(body: String): ProxyNode</ID>
+    <ID>TooGenericExceptionCaught:BackupManager.kt$BackupManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:BootReceiver.kt$BootReceiver$e: Throwable</ID>
+    <ID>TooGenericExceptionCaught:LogReader.kt$LogReader$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:NodeEditScreen.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:NodeRepository.kt$NodeRepository$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ProxyLinkParser.kt$ProxyLinkParser$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:QrTools.kt$QrTools$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RouteRepository.kt$RouteRepository$e: Exception</ID>
+    <ID>TooManyFunctions:NodeRepository.kt$NodeRepository</ID>
+    <ID>UseCheckOrError:BackupManager.kt$BackupManager$throw IllegalStateException("backup too large (&gt; 32 MB)")</ID>
+    <ID>UseCheckOrError:NativeInterface.kt$NativeInterface$throw IllegalStateException("openTun called with no active VpnService")</ID>
+    <ID>UseCheckOrError:NodeRepository.kt$NodeRepository$throw IllegalStateException("HTTP $code")</ID>
+    <ID>UseCheckOrError:NodeRepository.kt$NodeRepository$throw IllegalStateException("redirect ($code) without Location")</ID>
+    <ID>UseCheckOrError:NodeRepository.kt$NodeRepository$throw IllegalStateException("subscription too large (&gt; ${MAX_SUBSCRIPTION_BYTES / 1024 / 1024} MB)")</ID>
+    <ID>UseCheckOrError:NodeRepository.kt$NodeRepository$throw IllegalStateException("too many redirects")</ID>
+    <ID>UseCheckOrError:YukariVpnService.kt$YukariVpnService$throw IllegalStateException("VpnService.establish() returned null")</ID>
+    <ID>UseRequire:NodeRepository.kt$NodeRepository$throw IllegalArgumentException("unsupported subscription scheme: $scheme (use https)")</ID>
+  </CurrentIssues>
+</SmellBaseline>

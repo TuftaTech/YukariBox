@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Нижняя панель -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_stats">Трафик</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Боковое меню -->
+    <string name="nav_servers">Серверы</string>
+    <string name="nav_groups">Мои группы</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_log">Журнал</string>
+    <string name="nav_help">Помощь</string>
+    <string name="nav_share">Поделиться</string>
+
+    <!-- Заголовки экранов -->
+    <string name="title_stats">Статистика</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_perapp">Прокси по приложениям</string>
+    <string name="title_routes">Правила маршрутизации</string>
+    <string name="title_logs">Журнал</string>
+    <string name="title_backup">Резервная копия</string>
+    <string name="title_node">Сервер</string>
+    <string name="title_help">Помощь и поддержка</string>
+
+    <!-- Что хранится в приложении: одна фраза для шапки меню и карточки профиля. -->
+    <plurals name="counts_servers">
+        <item quantity="one">%d сервер</item>
+        <item quantity="few">%d сервера</item>
+        <item quantity="many">%d серверов</item>
+        <item quantity="other">%d сервера</item>
+    </plurals>
+    <plurals name="counts_groups">
+        <item quantity="one">%d группа</item>
+        <item quantity="few">%d группы</item>
+        <item quantity="many">%d групп</item>
+        <item quantity="other">%d группы</item>
+    </plurals>
+    <string name="counts_pair">%1$s · %2$s</string>
+    <string name="counts_empty">Серверов пока нет</string>
+
+    <!-- Общие действия -->
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_edit">Изменить</string>
+    <string name="action_copy">Копировать</string>
+    <string name="action_stop">Стоп</string>
+
+    <!-- Описания для элементов без подписи -->
+    <string name="cd_menu">Открыть меню</string>
+    <string name="cd_back">Назад</string>
+    <string name="cd_add_group">Создать группу</string>
+    <string name="cd_more">Другие действия</string>
+    <string name="cd_group_actions">Действия с группой</string>
+    <string name="cd_avatar_change">Сменить картинку</string>
+    <string name="cd_nickname_change">Сменить имя</string>
+    <string name="cd_groups_open">Открыть группы</string>
+    <string name="cd_star">В избранное</string>
+    <string name="cd_unstar">Убрать из избранного</string>
+    <string name="cd_connect">Включить туннель</string>
+    <string name="cd_cancel_connect">Отменить подключение</string>
+    <string name="cd_disconnect">Отключить туннель</string>
+    <string name="cd_disconnecting">Отключение</string>
+    <string name="cd_reconnect_blocked">Переподключить туннель — трафик сейчас заблокирован</string>
+    <string name="cd_reconnect_unprotected">Переподключить туннель — трафик НЕ защищён</string>
+</resources>

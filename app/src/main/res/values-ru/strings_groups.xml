@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Group list -->
+    <string name="groups_title">Мои группы</string>
+    <string name="groups_empty_title">Групп пока нет</string>
+    <string name="groups_empty_hint">Создайте группу вручную или добавьте подписку</string>
+    <string name="groups_kind_manual">Вручную</string>
+    <string name="groups_kind_subscription">Подписка</string>
+    <string name="groups_count">серверов: %1$d</string>
+
+    <!-- Group menu -->
+    <string name="groups_menu_update">Обновить</string>
+
+    <!-- Create / edit dialog -->
+    <string name="groups_dialog_new_title">Новая группа</string>
+    <string name="groups_dialog_edit_title">Изменить группу</string>
+    <string name="groups_field_name">Название</string>
+    <string name="groups_field_name_optional">Название (необязательно)</string>
+    <string name="groups_field_url">URL подписки (https)</string>
+    <string name="groups_url_hint">Узлы загружаются по URL при сохранении и при каждом обновлении.</string>
+
+    <!-- Delete confirmation -->
+    <string name="groups_delete_title">Удалить группу?</string>
+    <string name="groups_delete_body">Удалить «%1$s» и все её узлы (%2$d).</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App-wide strings: navigation, screen titles, shared actions, content descriptions. -->
+<resources>
+    <!-- Bottom bar. Three tabs, so these sit under a 22dp glyph and must stay short. -->
+    <string name="nav_home">Home</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Drawer destinations. -->
+    <string name="nav_servers">Servers</string>
+    <string name="nav_groups">My Groups</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_help">Help &amp; Support</string>
+    <string name="nav_share">Share Yukari</string>
+
+    <!-- Screen titles. Every screen names its own title, so there is no key here that
+         nothing reads: `Screen.titleRes` was dropped and its three orphans (Home,
+         Servers, About) went with it. -->
+    <string name="title_stats">Statistics</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_perapp">Per-app proxy</string>
+    <string name="title_routes">Routing rules</string>
+    <string name="title_logs">Log</string>
+    <string name="title_backup">Backup</string>
+    <string name="title_node">Server</string>
+    <string name="title_help">Help &amp; Support</string>
+
+    <!-- What this install holds, as one sentence. Shown by the drawer header and by the
+         profile card: one pair of plurals and one joiner for both, because two surfaces
+         reporting the same two numbers in two different phrasings is a bug the user can
+         see. Plurals rather than "%1$d servers · %2$d groups": at one server that
+         sentence is ungrammatical in English and wrong in three ways in Russian. The
+         empty case says so instead of printing two zeros. -->
+    <plurals name="counts_servers">
+        <item quantity="one">%d server</item>
+        <item quantity="other">%d servers</item>
+    </plurals>
+    <plurals name="counts_groups">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <string name="counts_pair">%1$s · %2$s</string>
+    <string name="counts_empty">No servers yet</string>
+
+    <!-- Shared actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_close">Close</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_stop">Stop</string>
+
+    <!-- Content descriptions for glyph-only controls. -->
+    <string name="cd_menu">Open the menu</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_add_group">Create a group</string>
+    <string name="cd_more">More actions</string>
+    <!-- Long-press label on a group tab in the strip. -->
+    <string name="cd_group_actions">Group actions</string>
+    <string name="cd_avatar_change">Change your picture</string>
+    <string name="cd_nickname_change">Change your name</string>
+    <string name="cd_groups_open">Open your groups</string>
+    <string name="cd_star">Add to favourites</string>
+    <string name="cd_unstar">Remove from favourites</string>
+    <!-- The connect control shows a glyph only, so these are its whole label. -->
+    <string name="cd_connect">Connect the tunnel</string>
+    <string name="cd_cancel_connect">Cancel connecting</string>
+    <string name="cd_disconnect">Disconnect the tunnel</string>
+    <string name="cd_disconnecting">Disconnecting</string>
+    <!-- Fail-closed: the control connects, so it must not read as "stop". The two
+         states are opposites and a screen reader has no glyph to fall back on, so
+         each names the action first and the state as a qualifier. -->
+    <string name="cd_reconnect_blocked">Reconnect the tunnel — traffic is currently blocked</string>
+    <string name="cd_reconnect_unprotected">Reconnect the tunnel — traffic is NOT protected</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sections -->
+    <string name="node_edit_section_basic">Основное</string>
+    <string name="node_edit_section_transport">Транспорт</string>
+
+    <!-- Basic fields -->
+    <string name="node_edit_name">Название (необязательно)</string>
+    <string name="node_edit_server">Сервер</string>
+    <string name="node_edit_port">Порт</string>
+
+    <!-- Protocol fields -->
+    <string name="node_edit_flow">Flow (например, xtls-rprx-vision)</string>
+    <string name="node_edit_vmess_security">Шифрование (auto/aes-128-gcm/…)</string>
+    <string name="node_edit_password">Пароль</string>
+    <string name="node_edit_password_optional">Пароль (необязательно)</string>
+    <string name="node_edit_username">Имя пользователя (необязательно)</string>
+    <string name="node_edit_method">Метод шифрования</string>
+    <string name="node_edit_obfs">Obfs (salamander или пусто)</string>
+    <string name="node_edit_obfs_password">Пароль obfs</string>
+    <string name="node_edit_wg_local">Локальный адрес (10.0.0.2/32, через запятую)</string>
+    <string name="node_edit_wg_private">Приватный ключ</string>
+    <string name="node_edit_wg_peer_pub">Публичный ключ пира</string>
+    <string name="node_edit_wg_psk">Pre-shared key (необязательно)</string>
+    <string name="node_edit_wg_reserved">Reserved (1,2,3 или base64, необязательно)</string>
+    <string name="node_edit_congestion">Управление перегрузкой</string>
+    <string name="node_edit_udp_relay">Режим UDP relay</string>
+
+    <!-- Transport fields -->
+    <string name="node_edit_host_header">Заголовок Host</string>
+    <string name="node_edit_path">Путь</string>
+    <string name="node_edit_grpc_service">Имя сервиса gRPC</string>
+
+    <!-- TLS fields -->
+    <string name="node_edit_alpn">ALPN (через запятую)</string>
+    <string name="node_edit_fingerprint">Отпечаток uTLS (chrome/…)</string>
+    <string name="node_edit_allow_insecure">Разрешить небезопасное соединение</string>
+    <string name="node_edit_reality_pbk">Публичный ключ Reality (pbk)</string>
+    <string name="node_edit_reality_sid">Короткий ID Reality (sid)</string>
+
+    <!-- Save button -->
+    <string name="node_edit_btn_add">Добавить узел</string>
+    <string name="node_edit_btn_save">Сохранить изменения</string>
+
+    <!-- Validation errors -->
+    <string name="node_edit_err_port">Порт должен быть числом</string>
+    <string name="node_edit_err_server">Укажите сервер</string>
+    <string name="node_edit_err_uuid">Укажите UUID</string>
+    <string name="node_edit_err_password">Укажите пароль</string>
+    <string name="node_edit_err_method">Выберите поддерживаемый метод шифрования (AEAD)</string>
+    <string name="node_edit_err_wg_private">Укажите приватный ключ</string>
+    <string name="node_edit_err_wg_peer">Укажите публичный ключ пира</string>
+    <string name="node_edit_err_invalid">Некорректный ввод</string>
+</resources>

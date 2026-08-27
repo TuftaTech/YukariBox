@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Outcomes the node store reports back to the user, rendered by the servers screen's
+  notice. The store holds a resource id rather than prose so these stay localized —
+  it runs on IO and network threads with no Context to resolve against.
+-->
+<resources>
+    <!-- Subscription refresh -->
+    <string name="status_updating">Updating…</string>
+    <plurals name="status_updated">
+        <item quantity="one">Updated — %1$d server</item>
+        <item quantity="other">Updated — %1$d servers</item>
+    </plurals>
+    <string name="status_update_failed">Update failed: %1$s</string>
+    <string name="status_auto_update_failed">Auto-update failed: %1$s</string>
+    <string name="status_manual_group">Manual group — nothing to update</string>
+    <!-- The server the user picked can vanish from the feed; the selection then moves on
+         its own, so say which server Connect would dial now. -->
+    <string name="status_selected_changed">Selected server changed: %1$s → %2$s</string>
+    <string name="status_selected_gone">Selected server “%1$s” is gone from the subscription</string>
+
+    <!-- Import -->
+    <string name="status_importing">Importing…</string>
+    <plurals name="status_imported">
+        <item quantity="one">Imported %1$d server</item>
+        <item quantity="other">Imported %1$d servers</item>
+    </plurals>
+    <string name="status_import_failed">Import failed: %1$s</string>
+
+    <!-- Editing -->
+    <string name="status_added_one">Added %1$s</string>
+    <plurals name="status_added">
+        <item quantity="one">Added %1$d server</item>
+        <item quantity="other">Added %1$d servers</item>
+    </plurals>
+    <string name="status_moved">Moved to %1$s</string>
+    <string name="status_cleared">Servers cleared</string>
+    <plurals name="status_restored">
+        <item quantity="one">Restored %1$d group</item>
+        <item quantity="other">Restored %1$d groups</item>
+    </plurals>
+    <string name="status_save_failed">Save failed: %1$s</string>
+
+    <!-- Bulk clean-up of the list -->
+    <plurals name="status_dups_removed">
+        <item quantity="one">Removed %1$d duplicate</item>
+        <item quantity="other">Removed %1$d duplicates</item>
+    </plurals>
+    <string name="status_dups_none">No duplicates</string>
+    <plurals name="status_dead_removed">
+        <item quantity="one">Removed %1$d unreachable server</item>
+        <item quantity="other">Removed %1$d unreachable servers</item>
+    </plurals>
+    <string name="status_dead_none">No unreachable servers</string>
+
+    <!-- Batch latency test (UrlTestEngine reports through the same notice) -->
+    <string name="status_testing">Testing %1$d/%2$d…</string>
+    <plurals name="status_tested">
+        <item quantity="one">Tested %1$d server</item>
+        <item quantity="other">Tested %1$d servers</item>
+    </plurals>
+    <string name="status_test_stopped">Test stopped at %1$d/%2$d</string>
+</resources>

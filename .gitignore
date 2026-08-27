@@ -1,0 +1,74 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+
+# Release signing material. The keystore is supplied out of band and belongs
+# outside the tree; these patterns are the second line of defence, because a
+# key committed once is unrecoverable after the repository is public.
+*.jks
+*.p12
+*.keystore
+# The names Android tooling and habit reach for when a key or a token needs a home.
+# None of these exists here; that is the point -- the first one to appear should be
+# invisible to `git add -A` rather than noticed afterwards.
+keystore.properties
+signing.properties
+secrets.properties
+*.pem
+*.key
+.env
+
+/.idea/
+.DS_Store
+/build/
+/app/build/
+**/build/
+/captures/
+*.apk
+*.aab
+/app/release/
+
+# Local agent/tooling config (machine-specific, not part of the app)
+/.claude/
+/.mcp.json
+
+# Throwaway on-device verification screenshots
+/.shots/
+
+# Python bytecode from design/tools
+__pycache__/
+*.pyc
+design/tools/preview/
+
+# The download site. Its own git repository, published to GitHub Pages as
+# TuftaTech.github.io. Ignored here so this repository never tracks it and an
+# `add -A` cannot turn it into an embedded repo.
+/site/
+
+# Design and spec notes kept locally, deliberately not versioned (owner's call).
+/docs/
+
+# The standing project notes and the reference drawings, held back for the same reason:
+# working material rather than part of the app. Removed from the published tree on
+# 2026-08-27. Nothing in the build reads either of them -- of the five generators in
+# design/tools only make_mascot_assets.py opens design/reference, and every asset all
+# five produce is committed under app/src/main. Both stay on disk; see design/README.md.
+/CLAUDE.md
+/design/reference/
+
+# Scratch workspace for subagent-driven plan execution (ledger, briefs, review
+# packages). Regenerable, and nothing reads it back; the code is the record.
+/.superpowers/
+
+# Playwright MCP scratch (page snapshots, console logs, screenshots).
+/.playwright-mcp/
+
+# Screenshots from an agent's browser or from the device have twice been written to
+# the repository root instead of the scratch directory above, and a stray .png at the
+# root is never part of this project -- everything the app draws lives under
+# app/src/main/res, app/src/main/assets or screenshots/.
+/*.png
+
+# Heap dumps from the profiler.
+*.hprof

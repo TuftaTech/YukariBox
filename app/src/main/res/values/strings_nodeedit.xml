@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Node editor screen: form sections, field labels, validation messages. -->
+<resources>
+    <!-- Sections -->
+    <string name="node_edit_section_basic">Basics</string>
+    <string name="node_edit_section_transport">Transport</string>
+    <string name="node_edit_section_tls" translatable="false">TLS</string>
+
+    <!-- Basic fields -->
+    <string name="node_edit_name">Name (optional)</string>
+    <string name="node_edit_server">Server</string>
+    <string name="node_edit_port">Port</string>
+
+    <!-- Protocol fields -->
+    <string name="node_edit_uuid" translatable="false">UUID</string>
+    <string name="node_edit_flow">Flow (e.g. xtls-rprx-vision)</string>
+    <string name="node_edit_vmess_security">Security (auto/aes-128-gcm/…)</string>
+    <string name="node_edit_password">Password</string>
+    <string name="node_edit_password_optional">Password (optional)</string>
+    <string name="node_edit_username">Username (optional)</string>
+    <string name="node_edit_method">Encryption method</string>
+    <string name="node_edit_obfs">Obfs (salamander or empty)</string>
+    <string name="node_edit_obfs_password">Obfs password</string>
+    <string name="node_edit_wg_local">Local address (10.0.0.2/32, comma-sep)</string>
+    <string name="node_edit_wg_private">Private key</string>
+    <string name="node_edit_wg_peer_pub">Peer public key</string>
+    <string name="node_edit_wg_psk">Pre-shared key (optional)</string>
+    <string name="node_edit_wg_mtu" translatable="false">MTU</string>
+    <string name="node_edit_wg_reserved">Reserved (1,2,3 or base64, optional)</string>
+    <string name="node_edit_congestion">Congestion control</string>
+    <string name="node_edit_udp_relay">UDP relay mode</string>
+
+    <!-- Transport fields -->
+    <string name="node_edit_host_header">Host header</string>
+    <string name="node_edit_path">Path</string>
+    <string name="node_edit_grpc_service">gRPC service name</string>
+
+    <!-- TLS fields -->
+    <string name="node_edit_sni" translatable="false">SNI</string>
+    <string name="node_edit_alpn">ALPN (comma-separated)</string>
+    <string name="node_edit_fingerprint">uTLS fingerprint (chrome/…)</string>
+    <string name="node_edit_allow_insecure">Allow insecure</string>
+    <string name="node_edit_reality_pbk">Reality public key (pbk)</string>
+    <string name="node_edit_reality_sid">Reality short ID (sid)</string>
+
+    <!-- Save button -->
+    <string name="node_edit_btn_add">Add node</string>
+    <string name="node_edit_btn_save">Save changes</string>
+
+    <!-- Validation errors -->
+    <string name="node_edit_err_port">Port must be a number</string>
+    <string name="node_edit_err_server">Server is required</string>
+    <string name="node_edit_err_uuid">UUID is required</string>
+    <string name="node_edit_err_password">Password is required</string>
+    <string name="node_edit_err_method">Select a supported (AEAD) encryption method</string>
+    <string name="node_edit_err_wg_private">Private key is required</string>
+    <string name="node_edit_err_wg_peer">Peer public key is required</string>
+    <string name="node_edit_err_invalid">Invalid input</string>
+</resources>

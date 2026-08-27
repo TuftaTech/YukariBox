@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings screen: categories, preference rows, dialogs.
+
+     The rows are single-line, so a row carries a label and — where it has one — its
+     current value, and nothing else. The explanatory sentences the rows used to carry
+     are gone; the six free-text settings keep theirs inside the edit dialog, where a
+     sentence has room, and the proxy-auth opt-out keeps its consequence in a notice. -->
+<resources>
+    <!-- Categories -->
+    <string name="settings_cat_connection">Connection</string>
+    <string name="settings_cat_dns" translatable="false">DNS</string>
+    <string name="settings_cat_network">Network</string>
+    <string name="settings_cat_routing">Routing</string>
+    <string name="settings_cat_behavior">Behavior</string>
+    <string name="settings_cat_subscription">Subscription</string>
+    <string name="settings_cat_advanced">Advanced</string>
+    <string name="settings_cat_logs">Logs &amp; debug</string>
+
+    <!-- Connection. Service mode gets real labels, unlike TunStack / Ipv6Mode, whose
+         enum names are the upstream sing-box vocabulary a user comparing configs
+         needs verbatim. -->
+    <string name="settings_service_mode">Service mode</string>
+    <string name="settings_mode_vpn">Full VPN</string>
+    <string name="settings_mode_proxy">Local proxy only</string>
+    <string name="settings_animations">Animations</string>
+    <string name="settings_node_in_notification">Node in notification</string>
+
+    <!-- DNS. The two resolver rows are free text; their sentence is in the dialog. -->
+    <string name="settings_remote_dns">Remote DNS</string>
+    <string name="settings_remote_dns_sum">Resolver for proxied traffic</string>
+    <string name="settings_direct_dns">Direct DNS</string>
+    <string name="settings_direct_dns_sum">Resolver for bypassed traffic</string>
+    <string name="settings_remote_dns_preset">Remote DNS preset</string>
+    <string name="settings_direct_dns_preset">Direct DNS preset</string>
+    <string name="settings_dns_preset_unreachable">Unreachable</string>
+    <string name="settings_dns_routing">DNS routing</string>
+
+    <!-- Network -->
+    <string name="settings_mtu" translatable="false">MTU</string>
+    <string name="settings_mtu_sum">TUN interface MTU</string>
+    <string name="settings_tun_stack">TUN stack</string>
+    <string name="settings_ipv6" translatable="false">IPv6</string>
+
+    <!-- Routing -->
+    <string name="settings_routes">Routing rules</string>
+    <string name="settings_perapp">Per-app proxy</string>
+    <string name="settings_perapp_all">All apps</string>
+    <string name="settings_perapp_summary">%1$d apps · %2$s</string>
+    <string name="settings_perapp_mode_proxy">proxy only</string>
+    <string name="settings_perapp_mode_bypass">bypass</string>
+    <string name="settings_bypass_lan">Bypass LAN</string>
+    <string name="settings_sniffing">Sniffing</string>
+    <string name="settings_preset_ru_bypass">RU bypass preset</string>
+    <string name="settings_preset_adblock">Ad-block preset</string>
+
+    <!-- Behavior -->
+    <string name="settings_autoconnect_network">Auto-connect on network available</string>
+    <string name="settings_reconnect_network">Reconnect on network change</string>
+    <string name="settings_auto_switch">Auto-switch to fastest node</string>
+
+    <!-- Subscription -->
+    <string name="settings_auto_update">Auto-update</string>
+    <string name="settings_update_interval">Update interval (min)</string>
+    <string name="settings_update_interval_sum">How often to auto-update</string>
+    <string name="settings_user_agent" translatable="false">User-Agent</string>
+    <string name="settings_user_agent_sum">Sent when fetching subscription URLs</string>
+    <string name="settings_test_url">Connection test URL</string>
+    <string name="settings_test_url_sum">Probe URL for latency tests</string>
+
+    <!-- Advanced -->
+    <string name="settings_allow_insecure">Allow insecure TLS</string>
+
+    <!-- Logs &amp; debug -->
+    <string name="settings_view_logs">View logs</string>
+    <!-- Journalling is off by default; see the Logs section. -->
+    <string name="settings_logging">Keep a journal</string>
+    <string name="settings_logging_sum">Off by default. Records what the app and the core do, on this device only.</string>
+    <string name="settings_logging_pending">The core keeps writing to its own log until this session reconnects.</string>
+    <string name="settings_log_level">Log level</string>
+    <string name="settings_reconnect_now">Reconnect now</string>
+
+    <!-- The proxy-only inbound's credentials, and the opt-out that removes them. The
+         opt-out's consequence is shown as a notice under the switch, not as a row
+         summary: it is the most consequential switch in the app. -->
+    <string name="settings_proxy_auth_off">Serve the local proxy without a password</string>
+    <string name="settings_proxy_auth_off_sum">Off by default. With this on, any app on this device can route through your tunnel — it spends your quota and its destinations are attributed to you. Only for clients that cannot do proxy authentication.</string>
+    <string name="proxy_title">Local proxy</string>
+    <string name="proxy_badge">proxy only</string>
+    <string name="proxy_address">Address (SOCKS / HTTP)</string>
+    <string name="proxy_user">Username</string>
+    <string name="proxy_password">Password</string>
+    <string name="proxy_pending">Generated on first connect</string>
+    <string name="proxy_show">Show the password</string>
+    <string name="proxy_hide">Hide the password</string>
+    <string name="proxy_auth_off">Authentication is off: any app on this device can route through your tunnel. Turn it back on below.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Backup screen: export/import cards, status messages, selective-restore dialog. -->
+<resources>
+    <!-- Export card -->
+    <string name="backup_export_title">Export</string>
+    <string name="backup_export_desc">Settings, all groups/nodes and routing rules into one JSON file.</string>
+    <string name="backup_export_warning">Node credentials are stored unencrypted — keep the file private.</string>
+    <string name="backup_export_button">Export backup</string>
+
+    <!-- Import card -->
+    <string name="backup_import_title">Import</string>
+    <string name="backup_import_desc">Restore from a YukariBox backup file. You choose which parts to apply.</string>
+    <string name="backup_import_button">Choose backup file</string>
+
+    <!-- Status messages -->
+    <string name="backup_saved">Backup saved</string>
+    <string name="backup_export_failed">Export failed: %1$s</string>
+    <string name="backup_read_failed">Cannot read backup: %1$s</string>
+    <string name="backup_restored">Backup restored</string>
+
+    <!-- Selective-restore dialog -->
+    <string name="backup_restore_title">Restore backup?</string>
+    <string name="backup_restore_body">Selected parts replace the current data:</string>
+    <string name="backup_part_settings">Settings</string>
+    <string name="backup_part_groups">Groups · %1$d group(s), %2$d node(s)</string>
+    <string name="backup_part_routes">Routing rules · %1$d</string>
+    <string name="backup_restore_action">Restore</string>
+
+    <!-- Portable config card (NekoBox / sing-box compatible) -->
+    <string name="backup_config_title">Portable config</string>
+    <string name="backup_config_desc">Export your nodes as NekoBox / sing-box-compatible share links, or import a link list.</string>
+    <string name="backup_config_password_label">Password (optional)</string>
+    <string name="backup_config_password_hint">Encrypts the export. The same password is needed to import it back.</string>
+    <string name="backup_config_export_button">Export config</string>
+    <string name="backup_config_import_button">Import config</string>
+    <string name="backup_config_saved">Config exported: %1$d node(s)</string>
+    <string name="backup_config_imported">Imported %1$d node(s)</string>
+    <string name="backup_config_import_failed">Cannot import config: %1$s</string>
+</resources>

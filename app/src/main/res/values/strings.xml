@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">YukariBox</string>
+    <string name="shortcut_connect">Connect</string>
+    <string name="shortcut_disconnect">Disconnect</string>
+    <string name="shortcut_toggle">Toggle VPN</string>
+    <string name="widget_description">Connect or disconnect YukariBox from the home screen</string>
+    <string name="widget_status_connected">Connected</string>
+    <string name="widget_status_connecting">Connecting…</string>
+    <string name="widget_status_disconnecting">Disconnecting…</string>
+    <string name="widget_status_disconnected">Disconnected</string>
+    <!-- Fail-closed: the tunnel is down but a blocking TUN still drops every packet. -->
+    <string name="widget_status_blocked">Blocked</string>
+    <!-- Fail-closed could not be armed — traffic is not protected. -->
+    <string name="widget_status_unprotected">Not protected</string>
+
+    <!-- Quick Settings tile subtitles. -->
+    <string name="tile_sub_connected">Connected</string>
+    <string name="tile_sub_connecting">connecting…</string>
+    <string name="tile_sub_disconnecting">disconnecting…</string>
+    <string name="tile_sub_off">off</string>
+    <string name="tile_sub_blocked">blocked</string>
+    <string name="tile_sub_unprotected">not protected</string>
+</resources>

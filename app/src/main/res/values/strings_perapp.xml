@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Per-app proxy (split tunnel) screen. -->
+<resources>
+    <string name="perapp_mode_proxy">Proxy selected</string>
+    <string name="perapp_mode_bypass">Bypass selected</string>
+    <string name="perapp_selected_count">%1$d apps</string>
+    <string name="perapp_system_tag">system</string>
+    <string name="perapp_loading">Scanning installed apps…</string>
+    <string name="perapp_empty_title">No apps found</string>
+    <string name="perapp_empty_hint">Apps with network access appear here</string>
+</resources>

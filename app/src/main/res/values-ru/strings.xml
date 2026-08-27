@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shortcut_connect">Подключить</string>
+    <string name="shortcut_disconnect">Отключить</string>
+    <string name="shortcut_toggle">Переключить VPN</string>
+    <string name="widget_description">Подключение и отключение YukariBox с домашнего экрана</string>
+    <string name="widget_status_connected">Подключено</string>
+    <string name="widget_status_connecting">Подключение…</string>
+    <string name="widget_status_disconnecting">Отключение…</string>
+    <string name="widget_status_disconnected">Отключено</string>
+    <!-- Fail-closed: туннель упал, но блокирующий TUN отбрасывает все пакеты. -->
+    <string name="widget_status_blocked">Заблокировано</string>
+    <!-- Взвести fail-closed не удалось — трафик не защищён. -->
+    <string name="widget_status_unprotected">Не защищено</string>
+
+    <!-- Подписи плитки быстрых настроек. -->
+    <string name="tile_sub_connected">Подключено</string>
+    <string name="tile_sub_connecting">подключение…</string>
+    <string name="tile_sub_disconnecting">отключение…</string>
+    <string name="tile_sub_off">выкл.</string>
+    <string name="tile_sub_blocked">заблокировано</string>
+    <string name="tile_sub_unprotected">не защищено</string>
+</resources>

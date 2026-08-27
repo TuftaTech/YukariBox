@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The servers screen: the group strip, the server rows, the actions menu and every
+     dialog either of them can raise. -->
+<resources>
+    <!-- Empty states. Three of them, because they need three different instructions. -->
+    <string name="servers_no_group_title">No groups yet</string>
+    <string name="servers_no_group_hint">Use + to create a group or add a subscription to hold your servers.</string>
+    <string name="servers_empty_title">This group is empty</string>
+    <string name="servers_empty_hint">Use the menu to add a server by hand, paste a share link, or scan a QR image.</string>
+    <string name="search_empty_title">Nothing found</string>
+    <string name="search_empty_hint">No server matches what you typed.</string>
+    <string name="search_label">Search name or address</string>
+
+    <!-- The trailing plate on a row. `PING` is a label, not a sentence. -->
+    <string name="ping_value">Ping %1$d</string>
+    <string name="ping_untested">Ping —</string>
+    <string name="ping_testing">Ping …</string>
+    <string name="lat_timeout">Timeout</string>
+    <string name="lat_testing">testing…</string>
+    <string name="lat_ms">%1$d ms</string>
+    <!-- Shown on a server whose connection carries no TLS/Reality layer at all. -->
+    <string name="badge_no_tls">No TLS</string>
+
+    <!-- Batch latency test. -->
+    <string name="testing_progress">Testing %1$d/%2$d</string>
+
+    <!-- The + menu. -->
+    <string name="menu_section_add">Add</string>
+    <string name="menu_section_list">List</string>
+    <string name="menu_section_no_group">No group</string>
+    <string name="menu_new_node">New server</string>
+    <string name="menu_import_clipboard">Paste from clipboard</string>
+    <string name="menu_import_qr">Scan QR from an image</string>
+    <string name="menu_test_all">Test every server</string>
+    <string name="menu_update_sub">Update this subscription</string>
+    <string name="menu_edit_group">Edit this group…</string>
+    <string name="menu_remove_dups">Remove duplicates</string>
+    <string name="menu_delete_unavailable">Delete unreachable</string>
+    <string name="menu_clear_nodes">Clear every server</string>
+    <string name="menu_delete_group">Delete this group</string>
+    <string name="sort_manual">Keep my order</string>
+    <string name="sort_latency">Sort by ping</string>
+    <string name="sort_name">Sort by name</string>
+    <!-- A row's long-press menu. -->
+    <string name="node_clone">Duplicate</string>
+    <string name="node_move">Move to another group…</string>
+    <string name="node_copy_link">Copy share link</string>
+    <string name="node_show_qr">Show QR code</string>
+    <string name="node_delete_title">Delete this server?</string>
+    <string name="node_delete_body">“%1$s” will be removed from this group.</string>
+    <string name="move_title">Move to another group</string>
+    <string name="move_none">There is no other group yet. Create one from the + menu first.</string>
+    <string name="qr_cannot_export">This server cannot be turned into a share link.</string>
+    <string name="cd_qr_image">QR code of the server\'s share link</string>
+
+    <!-- Destructive bulk operations. -->
+    <string name="confirm_delete_unavailable_title">Delete unreachable servers?</string>
+    <string name="confirm_delete_unavailable_body">Every server whose last ping timed out will be removed.</string>
+    <string name="confirm_clear_title">Clear every server?</string>
+    <string name="confirm_clear_body">Every server in “%1$s” will be removed. The group stays and a subscription can be updated again.</string>
+    <string name="confirm_delete_group_title">Delete this group?</string>
+    <string name="confirm_delete_group_body">“%1$s” and every server in it will be removed.</string>
+
+    <!-- Import results, reported in the list's own notice strip. -->
+    <string name="msg_clipboard_empty">The clipboard is empty.</string>
+    <string name="msg_no_links_clipboard">No supported share link in the clipboard.</string>
+    <string name="msg_no_qr">No QR code in that image.</string>
+    <string name="msg_qr_no_links">That QR code holds no supported share link.</string>
+    <string name="msg_export_failed">Could not build a share link: %1$s</string>
+</resources>

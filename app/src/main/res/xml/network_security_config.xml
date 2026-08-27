@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Subscription URLs and proxy share links carry credentials (UUIDs, passwords).
+  The app's own HTTP traffic (subscription fetch) must never go in the clear, so
+  a captured request can't leak the whole node set. This only governs the Android
+  HTTP stack used by NodeRepository.httpGet; the sing-box core dials its own
+  protected sockets and is unaffected (so the captive-portal probe still works).
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

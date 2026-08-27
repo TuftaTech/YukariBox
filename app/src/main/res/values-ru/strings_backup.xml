@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Export card -->
+    <string name="backup_export_title">Экспорт</string>
+    <string name="backup_export_desc">Настройки, все группы/узлы и правила маршрутизации в один JSON-файл.</string>
+    <string name="backup_export_warning">Учётные данные узлов хранятся в открытом виде — держите файл в секрете.</string>
+    <string name="backup_export_button">Экспортировать резервную копию</string>
+
+    <!-- Import card -->
+    <string name="backup_import_title">Импорт</string>
+    <string name="backup_import_desc">Восстановление из файла резервной копии YukariBox. Вы выбираете, какие части применить.</string>
+    <string name="backup_import_button">Выбрать файл резервной копии</string>
+
+    <!-- Status messages -->
+    <string name="backup_saved">Резервная копия сохранена</string>
+    <string name="backup_export_failed">Не удалось экспортировать: %1$s</string>
+    <string name="backup_read_failed">Не удалось прочитать резервную копию: %1$s</string>
+    <string name="backup_restored">Резервная копия восстановлена</string>
+
+    <!-- Selective-restore dialog -->
+    <string name="backup_restore_title">Восстановить резервную копию?</string>
+    <string name="backup_restore_body">Выбранные части заменят текущие данные:</string>
+    <string name="backup_part_settings">Настройки</string>
+    <string name="backup_part_groups">Группы · групп: %1$d, узлов: %2$d</string>
+    <string name="backup_part_routes">Правила маршрутизации · %1$d</string>
+    <string name="backup_restore_action">Восстановить</string>
+
+    <!-- Portable config card (NekoBox / sing-box compatible) -->
+    <string name="backup_config_title">Переносимая конфигурация</string>
+    <string name="backup_config_desc">Экспортируйте узлы как ссылки, совместимые с NekoBox / sing-box, или импортируйте список ссылок.</string>
+    <string name="backup_config_password_label">Пароль (необязательно)</string>
+    <string name="backup_config_password_hint">Шифрует экспорт. Тот же пароль нужен для обратного импорта.</string>
+    <string name="backup_config_export_button">Экспорт конфигурации</string>
+    <string name="backup_config_import_button">Импорт конфигурации</string>
+    <string name="backup_config_saved">Экспортировано узлов: %1$d</string>
+    <string name="backup_config_imported">Импортировано узлов: %1$d</string>
+    <string name="backup_config_import_failed">Не удалось импортировать конфигурацию: %1$s</string>
+</resources>

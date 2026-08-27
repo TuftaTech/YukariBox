@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="state_connected">Подключено</string>
+    <string name="state_connecting">Подключение</string>
+    <string name="state_disconnected">Отключено</string>
+    <string name="state_disconnecting">Отключение</string>
+    <string name="state_blocked">Трафик заблокирован</string>
+    <string name="state_unprotected">Нет защиты</string>
+    <string name="state_no_node">Сервер не выбран</string>
+    <string name="state_connected_title">Подключено</string>
+
+    <string name="tap_to_connect">Нажмите, чтобы подключиться</string>
+    <string name="tap_connecting">Нажмите, чтобы отменить</string>
+    <string name="tap_to_disconnect">Нажмите, чтобы отключиться</string>
+    <string name="tap_disconnecting">Отключаем туннель</string>
+    <string name="tap_to_reconnect">Нажмите, чтобы переподключиться</string>
+
+    <!-- Bold markup around the state word only; escaped so getString hands the tags
+         through to AnnotatedString.fromHtml. -->
+    <string name="security_protected">Соединение &lt;b&gt;защищено&lt;/b&gt;</string>
+    <string name="security_connecting">Проверяем туннель…</string>
+    <string name="security_unprotected">Соединение &lt;b&gt;не защищено&lt;/b&gt;</string>
+    <string name="security_blocked">Трафик &lt;b&gt;заблокирован&lt;/b&gt; — с устройства ничего не уходит</string>
+    <string name="security_protected_partial">Защищено — &lt;b&gt;часть приложений идёт мимо&lt;/b&gt; туннеля</string>
+    <string name="security_proxy_only">&lt;b&gt;Только локальный прокси&lt;/b&gt; — перехвата нет, защищены лишь приложения, направленные на 127.0.0.1:2080</string>
+    <string name="security_failed">&lt;b&gt;Нет защиты&lt;/b&gt; — аварийное отключение не сработало</string>
+
+    <string name="home_location_empty_title">Лучший сервер</string>
+    <string name="home_location_empty_hint">Выберите сервер для подключения</string>
+
+    <string name="home_blocked_actions">Туннель разорвался, и все пакеты намеренно отбрасываются. Переподключитесь или снимите блокировку, вернувшись к незащищённому соединению.</string>
+    <string name="home_unprotected_actions">Туннель разорвался, а аварийное отключение не сработало — трафик уходит без прокси. Переподключитесь или отключите сеть, пока это не удастся.</string>
+    <string name="btn_reconnect_short">Переподключить</string>
+    <string name="btn_release_short">Разблокировать</string>
+
+    <string name="notice_core_failed">Ядро VPN не инициализировалось, подключение невозможно. Перезапустите приложение; если не помогает, переустановите его.</string>
+    <string name="notice_nodes_corrupt">Сохранённые серверы не читаются и были сброшены. Файл сохранён как subscriptions.json.corrupt.</string>
+    <string name="notice_settings_corrupt">Настройки не читаются и сброшены к значениям по умолчанию. Файл сохранён как settings.json.corrupt.</string>
+    <string name="notice_routes_corrupt">Правила маршрутизации не читаются и были сброшены. Файл сохранён как routes.json.corrupt.</string>
+
+    <string name="drawer_version">Версия %1$s</string>
+
+    <string name="share_text">YukariBox — VPN-клиент на sing-box для Android. Со своими серверами.</string>
+</resources>

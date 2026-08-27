@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Telemetry strip -->
+    <string name="logs_following">СЛЕЖЕНИЕ</string>
+    <string name="logs_paused">ПАУЗА</string>
+    <string name="logs_lines">строк: %1$d</string>
+
+    <!-- Empty state -->
+    <string name="logs_empty">Журнал пуст</string>
+    <string name="logs_empty_hint">Вывод ядра появится здесь после запуска туннеля</string>
+    <string name="logs_off">Журнал выключен</string>
+    <string name="logs_off_hint">Ничего не записывается — ни приложением, ни ядром. Включите, если нужно разобраться с проблемой; записи остаются на этом устройстве.</string>
+    <string name="logs_turn_on">Включить журнал</string>
+
+    <!-- Control content descriptions -->
+    <string name="logs_cd_pause">Приостановить слежение</string>
+    <string name="logs_cd_resume">Возобновить слежение</string>
+    <string name="logs_cd_refresh">Обновить журнал</string>
+    <string name="logs_cd_clear">Очистить журнал</string>
+</resources>

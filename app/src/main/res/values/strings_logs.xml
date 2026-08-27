@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Log screen: field-terminal log viewer (follow / refresh / copy / clear). -->
+<resources>
+    <!-- Telemetry strip -->
+    <string name="logs_following">FOLLOWING</string>
+    <string name="logs_paused">PAUSED</string>
+    <string name="logs_lines">lines: %1$d</string>
+
+    <!-- Empty state -->
+    <string name="logs_empty">No log entries</string>
+    <string name="logs_empty_hint">Core output appears here once the tunnel runs</string>
+    <string name="logs_off">The journal is off</string>
+    <string name="logs_off_hint">Nothing is being recorded — not by the app and not by the core. Turn it on if you need to look into a problem; it stays on this device.</string>
+    <string name="logs_turn_on">Turn the journal on</string>
+
+    <!-- Control content descriptions -->
+    <string name="logs_cd_pause">Pause following</string>
+    <string name="logs_cd_resume">Resume following</string>
+    <string name="logs_cd_refresh">Refresh log</string>
+    <string name="logs_cd_clear">Clear log</string>
+</resources>

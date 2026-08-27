@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ongoing VPN status notification (foreground service) and the alert channel. -->
+<resources>
+    <string name="notif_status_connecting">Connecting…</string>
+    <string name="notif_status_connected">Connected</string>
+    <!-- %1$s = active node name -->
+    <string name="notif_status_connected_node">Connected · %1$s</string>
+    <string name="notif_status_tunnel">Tunnel</string>
+
+    <!-- Notification channels, as shown in Android's app notification settings. -->
+    <string name="notif_channel_status">VPN status</string>
+    <string name="notif_channel_status_desc">YukariBox tunnel status</string>
+    <string name="notif_channel_alert">Node alerts</string>
+    <string name="notif_channel_alert_desc">Alerts when the active node drops</string>
+
+    <!-- Reconnect backoff. %1$d = attempt, %2$d = max attempts -->
+    <string name="notif_reconnecting">Reconnecting… (%1$d/%2$d)</string>
+    <!-- %1$d = seconds until the next try -->
+    <string name="notif_reconnecting_body">Node dropped. Retrying in %1$ds.</string>
+
+    <!-- Kill switch armed: a blocking TUN is held, so packets are dropped. -->
+    <string name="notif_failclosed">Tunnel down — traffic blocked</string>
+    <string name="notif_failclosed_body">The node failed. Traffic is blocked (fail-closed). Tap to switch nodes, or Stop to disconnect.</string>
+
+    <!-- Same, but the user has a per-app split tunnel: the blocking TUN carries that
+         plan, so apps left outside the tunnel keep their ordinary connection. Saying
+         "traffic is blocked" flat out would be untrue for those. -->
+    <string name="notif_failclosed_partial">Tunnel down — protected apps blocked</string>
+    <string name="notif_failclosed_body_partial">The node failed. Apps that go through the tunnel are blocked (fail-closed); the ones you kept outside it still use the ordinary connection. Tap to switch nodes, or Stop to disconnect.</string>
+
+    <!-- Kill switch could NOT be armed: traffic is not protected. Never claim otherwise. -->
+    <string name="notif_unprotected">NOT PROTECTED — tunnel down</string>
+    <string name="notif_unprotected_body">The tunnel failed and the kill switch could not be armed, so traffic is NOT blocked. Open YukariBox to reconnect, or turn off the network.</string>
+
+    <!-- Node dropped alert. Deliberately names no node (see postAlert). -->
+    <string name="notif_drop">Node dropped</string>
+    <string name="notif_drop_body">Reconnect attempts failed. Tap to switch to another node.</string>
+
+    <!-- Captive portal: notify and wait; never route around the tunnel. -->
+    <string name="notif_captive">Sign in to this network</string>
+    <string name="notif_captive_body">A captive portal needs sign-in. YukariBox is waiting — traffic stays in the tunnel and won\'t leak. Open your browser to sign in.</string>
+</resources>

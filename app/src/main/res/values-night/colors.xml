@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keep equal to PageDark in Color.kt. -->
+    <color name="yukari_window_background">#121212</color>
+
+    <!-- The widget keeps its ink fill in dark mode too — see values/colors.xml. Only the
+         page behind it changes, so nothing here overrides the widget colours. -->
+</resources>

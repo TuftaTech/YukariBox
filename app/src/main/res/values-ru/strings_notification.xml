@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_status_connecting">Подключение…</string>
+    <string name="notif_status_connected">Подключено</string>
+    <!-- %1$s = имя активного узла -->
+    <string name="notif_status_connected_node">Подключено · %1$s</string>
+    <string name="notif_status_tunnel">Туннель</string>
+
+    <!-- Каналы уведомлений, как они видны в системных настройках приложения. -->
+    <string name="notif_channel_status">Состояние VPN</string>
+    <string name="notif_channel_status_desc">Состояние туннеля YukariBox</string>
+    <string name="notif_channel_alert">Оповещения об узле</string>
+    <string name="notif_channel_alert_desc">Оповещения о падении активного узла</string>
+
+    <!-- Пауза перед переподключением. %1$d = попытка, %2$d = всего попыток -->
+    <string name="notif_reconnecting">Переподключение… (%1$d/%2$d)</string>
+    <!-- %1$d = секунд до следующей попытки -->
+    <string name="notif_reconnecting_body">Узел отвалился. Повтор через %1$d с.</string>
+
+    <!-- Kill switch взведён: держится блокирующий TUN, пакеты отбрасываются. -->
+    <string name="notif_failclosed">Туннель упал — трафик заблокирован</string>
+    <string name="notif_failclosed_body">Узел не отвечает. Трафик заблокирован (fail-closed). Нажмите, чтобы сменить узел, или Stop для отключения.</string>
+
+    <!-- То же, но у пользователя настроен раздельный туннель по приложениям:
+         блокирующий TUN несёт тот же план, поэтому приложения вне туннеля сохраняют
+         обычное соединение. Утверждать «трафик заблокирован» про них нельзя. -->
+    <string name="notif_failclosed_partial">Туннель упал — защищённые приложения заблокированы</string>
+    <string name="notif_failclosed_body_partial">Узел не отвечает. Приложения, идущие через туннель, заблокированы (fail-closed); те, что вы оставили вне туннеля, продолжают работать через обычное соединение. Нажмите, чтобы сменить узел, или Stop для отключения.</string>
+
+    <!-- Kill switch взвести НЕ удалось: трафик не защищён. Не заявлять обратное. -->
+    <string name="notif_unprotected">НЕ ЗАЩИЩЕНО — туннель упал</string>
+    <string name="notif_unprotected_body">Туннель упал, и kill switch взвести не удалось — трафик НЕ блокируется. Откройте YukariBox для переподключения или отключите сеть.</string>
+
+    <!-- Оповещение о падении узла. Имя узла сознательно не показывается (см. postAlert). -->
+    <string name="notif_drop">Узел отвалился</string>
+    <string name="notif_drop_body">Попытки переподключения исчерпаны. Нажмите, чтобы выбрать другой узел.</string>
+
+    <!-- Captive portal: уведомить и ждать; никогда не пускать трафик мимо туннеля. -->
+    <string name="notif_captive">Требуется вход в сеть</string>
+    <string name="notif_captive_body">Сеть требует входа через страницу авторизации. YukariBox ждёт — трафик остаётся в туннеле и не утечёт. Откройте браузер для входа.</string>
+</resources>

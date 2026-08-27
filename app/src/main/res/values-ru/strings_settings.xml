@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Categories -->
+    <string name="settings_cat_connection">Подключение</string>
+    <string name="settings_cat_network">Сеть</string>
+    <string name="settings_cat_routing">Маршрутизация</string>
+    <string name="settings_cat_behavior">Поведение</string>
+    <string name="settings_cat_subscription">Подписки</string>
+    <string name="settings_cat_advanced">Дополнительно</string>
+    <string name="settings_cat_logs">Логи и отладка</string>
+
+    <!-- Connection -->
+    <string name="settings_service_mode">Режим службы</string>
+    <string name="settings_mode_vpn">Полный VPN</string>
+    <string name="settings_mode_proxy">Только локальный прокси</string>
+    <string name="settings_animations">Анимации</string>
+    <string name="settings_node_in_notification">Узел в уведомлении</string>
+
+    <!-- DNS -->
+    <string name="settings_remote_dns">Удалённый DNS</string>
+    <string name="settings_remote_dns_sum">Резолвер для проксируемого трафика</string>
+    <string name="settings_direct_dns">Прямой DNS</string>
+    <string name="settings_direct_dns_sum">Резолвер для трафика в обход</string>
+    <string name="settings_remote_dns_preset">Пресет удалённого DNS</string>
+    <string name="settings_direct_dns_preset">Пресет прямого DNS</string>
+    <string name="settings_dns_preset_unreachable">Недоступен</string>
+    <string name="settings_dns_routing">Маршрутизация DNS</string>
+
+    <!-- Network -->
+    <string name="settings_mtu_sum">MTU интерфейса TUN</string>
+    <string name="settings_tun_stack">Стек TUN</string>
+
+    <!-- Routing -->
+    <string name="settings_routes">Правила маршрутизации</string>
+    <string name="settings_perapp">Прокси для приложений</string>
+    <string name="settings_perapp_all">Все приложения</string>
+    <string name="settings_perapp_summary">%1$d прил. · %2$s</string>
+    <string name="settings_perapp_mode_proxy">только прокси</string>
+    <string name="settings_perapp_mode_bypass">обход</string>
+    <string name="settings_bypass_lan">Обход LAN</string>
+    <string name="settings_sniffing">Сниффинг</string>
+    <string name="settings_preset_ru_bypass">Пресет «Обход RU»</string>
+    <string name="settings_preset_adblock">Пресет «Антиреклама»</string>
+
+    <!-- Behavior -->
+    <string name="settings_autoconnect_network">Автоподключение при появлении сети</string>
+    <string name="settings_reconnect_network">Переподключение при смене сети</string>
+    <string name="settings_auto_switch">Авто-переключение на быстрый узел</string>
+
+    <!-- Subscription -->
+    <string name="settings_auto_update">Автообновление</string>
+    <string name="settings_update_interval">Интервал обновления (мин)</string>
+    <string name="settings_update_interval_sum">Как часто обновлять автоматически</string>
+    <string name="settings_user_agent_sum">Отправляется при загрузке подписок</string>
+    <string name="settings_test_url">Проверочный URL</string>
+    <string name="settings_test_url_sum">URL-зонд для тестов задержки</string>
+
+    <!-- Advanced -->
+    <string name="settings_allow_insecure">Разрешить небезопасный TLS</string>
+
+    <!-- Logs & debug -->
+    <string name="settings_view_logs">Просмотр логов</string>
+    <string name="settings_logging">Вести журнал</string>
+    <string name="settings_logging_sum">По умолчанию выключен. Записывает действия приложения и ядра, только на этом устройстве.</string>
+    <string name="settings_logging_pending">Ядро продолжает писать в свой журнал, пока эта сессия не переподключится.</string>
+    <string name="settings_log_level">Уровень логов</string>
+    <string name="settings_reconnect_now">Переподключить сейчас</string>
+
+    <string name="settings_proxy_auth_off">Локальный прокси без пароля</string>
+    <string name="settings_proxy_auth_off_sum">По умолчанию выключено. Если включить, любое приложение на устройстве сможет ходить через ваш туннель — это расходует ваш трафик, а все его запросы будут приписаны вам. Только для клиентов без поддержки авторизации прокси.</string>
+    <string name="proxy_title">Локальный прокси</string>
+    <string name="proxy_badge">только прокси</string>
+    <string name="proxy_address">Адрес (SOCKS / HTTP)</string>
+    <string name="proxy_user">Пользователь</string>
+    <string name="proxy_password">Пароль</string>
+    <string name="proxy_pending">Создаётся при первом подключении</string>
+    <string name="proxy_show">Показать пароль</string>
+    <string name="proxy_hide">Скрыть пароль</string>
+    <string name="proxy_auth_off">Авторизация отключена: любое приложение на устройстве может ходить через ваш туннель. Включите её ниже.</string>
+</resources>

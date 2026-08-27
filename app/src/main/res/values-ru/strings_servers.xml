@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="servers_no_group_title">Групп пока нет</string>
+    <string name="servers_no_group_hint">Нажмите +, чтобы создать группу или добавить подписку для хранения серверов.</string>
+    <string name="servers_empty_title">В группе нет серверов</string>
+    <string name="servers_empty_hint">Откройте меню, чтобы добавить сервер вручную, вставить ссылку или считать QR-код с картинки.</string>
+    <string name="search_empty_title">Ничего не найдено</string>
+    <string name="search_empty_hint">Ни один сервер не подходит под запрос.</string>
+    <string name="search_label">Поиск по названию или адресу</string>
+
+    <string name="ping_value">Пинг %1$d</string>
+    <string name="ping_untested">Пинг —</string>
+    <string name="ping_testing">Пинг …</string>
+    <string name="lat_timeout">Таймаут</string>
+    <string name="lat_testing">проверка…</string>
+    <string name="lat_ms">%1$d мс</string>
+    <string name="badge_no_tls">Без TLS</string>
+
+    <string name="testing_progress">Проверено %1$d из %2$d</string>
+
+    <string name="menu_section_add">Добавить</string>
+    <string name="menu_section_list">Список</string>
+    <string name="menu_section_no_group">Нет группы</string>
+    <string name="menu_new_node">Новый сервер</string>
+    <string name="menu_import_clipboard">Вставить из буфера</string>
+    <string name="menu_import_qr">Считать QR с картинки</string>
+    <string name="menu_test_all">Проверить все серверы</string>
+    <string name="menu_update_sub">Обновить эту подписку</string>
+    <string name="menu_edit_group">Изменить группу…</string>
+    <string name="menu_remove_dups">Убрать дубликаты</string>
+    <string name="menu_delete_unavailable">Удалить недоступные</string>
+    <string name="menu_clear_nodes">Очистить список серверов</string>
+    <string name="menu_delete_group">Удалить группу</string>
+    <string name="sort_manual">Мой порядок</string>
+    <string name="sort_latency">По пингу</string>
+    <string name="sort_name">По названию</string>
+
+    <string name="node_clone">Дублировать</string>
+    <string name="node_move">Перенести в другую группу…</string>
+    <string name="node_copy_link">Скопировать ссылку</string>
+    <string name="node_show_qr">Показать QR-код</string>
+    <string name="node_delete_title">Удалить сервер?</string>
+    <string name="node_delete_body">«%1$s» будет удалён из этой группы.</string>
+    <string name="move_title">Перенести в другую группу</string>
+    <string name="move_none">Других групп пока нет. Сначала создайте её через меню +.</string>
+    <string name="qr_cannot_export">Для этого сервера нельзя построить ссылку.</string>
+    <string name="cd_qr_image">QR-код ссылки на сервер</string>
+
+    <string name="confirm_delete_unavailable_title">Удалить недоступные серверы?</string>
+    <string name="confirm_delete_unavailable_body">Будут удалены все серверы, чей последний пинг завершился таймаутом.</string>
+    <string name="confirm_clear_title">Очистить список серверов?</string>
+    <string name="confirm_clear_body">Все серверы из «%1$s» будут удалены. Сама группа останется, подписку можно обновить снова.</string>
+    <string name="confirm_delete_group_title">Удалить группу?</string>
+    <string name="confirm_delete_group_body">«%1$s» и все её серверы будут удалены.</string>
+
+    <string name="msg_clipboard_empty">Буфер обмена пуст.</string>
+    <string name="msg_no_links_clipboard">В буфере нет поддерживаемых ссылок.</string>
+    <string name="msg_no_qr">На картинке нет QR-кода.</string>
+    <string name="msg_qr_no_links">В QR-коде нет поддерживаемых ссылок.</string>
+    <string name="msg_export_failed">Не удалось построить ссылку: %1$s</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Statistics screen: per-route traffic breakdown. -->
+<resources>
+    <string name="stats_session_total">Session total</string>
+    <string name="stats_breakdown_title">By route</string>
+    <string name="stats_proxy">Proxy node</string>
+    <string name="stats_direct">Direct</string>
+    <!-- Tile captions. Arrow-prefixed and short: three share the ink card's width. -->
+    <string name="stats_down">↓ Down</string>
+    <string name="stats_up">↑ Up</string>
+    <string name="stats_rate">↓ Now</string>
+    <string name="stats_percent">%1$d%%</string>
+    <string name="stats_note">Usage grouped by outbound route — the active node versus traffic sent direct.</string>
+    <string name="stats_empty_title">Not connected</string>
+    <string name="stats_empty_hint">Connect to see traffic broken down by route.</string>
+</resources>

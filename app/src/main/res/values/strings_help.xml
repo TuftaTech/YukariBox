@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Help & Support. The first card exists because "this app has no servers of its
+     own" is the single thing new users do not expect; the next two explain the two
+     behaviours that surprise people once they are set up. -->
+<resources>
+    <string name="help_section_start">Getting started</string>
+    <string name="help_section_build">Build</string>
+
+    <string name="help_servers_title">Where do servers come from?</string>
+    <string name="help_servers_body">YukariBox runs no servers of its own. You supply them: paste a share link, scan a QR code, or add a subscription URL from a provider. Everything you add stays on this device.</string>
+
+    <string name="help_groups_title">What is a group?</string>
+    <string name="help_groups_body">A group holds servers. A manual group is a list you edit yourself; a subscription is a URL that is fetched again on every update — and an update replaces that group\'s servers wholesale, keeping only your starred ones and your current choice where it still exists.</string>
+
+    <string name="help_killswitch_title">Why does traffic stop?</string>
+    <string name="help_killswitch_body">If a live session collapses and reconnecting fails, the app holds the tunnel open with nothing behind it so packets are dropped instead of leaking out unprotected. You will see "Traffic blocked" on the home screen, with a button to reconnect or to release the block deliberately.\n\nThat block lives inside YukariBox, so it goes away if Android stops the app to reclaim memory. For one that survives that, turn on Android Settings → Network → VPN → YukariBox → Always-on VPN, and "Block connections without VPN" beside it.</string>
+
+    <string name="help_backup_title">How do I move to a new phone?</string>
+    <string name="help_backup_body">Profile → Backup and restore writes every group to a file you choose. That file contains your server credentials in the clear unless you set a password on it, so keep it somewhere you would keep a password.</string>
+
+    <string name="about_core" translatable="false">Core: sing-box (libcore 1.12.19-neko-1)</string>
+    <string name="about_ui" translatable="false">UI: Jetpack Compose · Material 3</string>
+    <string name="about_licence" translatable="false">Licence: GPL-3.0-or-later</string>
+</resources>

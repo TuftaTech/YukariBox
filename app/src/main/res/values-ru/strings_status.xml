@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_updating">Обновление…</string>
+    <plurals name="status_updated">
+        <item quantity="one">Обновлено — %1$d сервер</item>
+        <item quantity="few">Обновлено — %1$d сервера</item>
+        <item quantity="many">Обновлено — %1$d серверов</item>
+        <item quantity="other">Обновлено — %1$d сервера</item>
+    </plurals>
+    <string name="status_update_failed">Не удалось обновить: %1$s</string>
+    <string name="status_auto_update_failed">Автообновление не удалось: %1$s</string>
+    <string name="status_manual_group">Ручная группа — обновлять нечего</string>
+    <string name="status_selected_changed">Выбранный сервер изменён: %1$s → %2$s</string>
+    <string name="status_selected_gone">Выбранный сервер «%1$s» исчез из подписки</string>
+
+    <string name="status_importing">Импорт…</string>
+    <plurals name="status_imported">
+        <item quantity="one">Импортирован %1$d сервер</item>
+        <item quantity="few">Импортировано %1$d сервера</item>
+        <item quantity="many">Импортировано %1$d серверов</item>
+        <item quantity="other">Импортировано %1$d сервера</item>
+    </plurals>
+    <string name="status_import_failed">Не удалось импортировать: %1$s</string>
+
+    <string name="status_added_one">Добавлен %1$s</string>
+    <plurals name="status_added">
+        <item quantity="one">Добавлен %1$d сервер</item>
+        <item quantity="few">Добавлено %1$d сервера</item>
+        <item quantity="many">Добавлено %1$d серверов</item>
+        <item quantity="other">Добавлено %1$d сервера</item>
+    </plurals>
+    <string name="status_moved">Перемещён в «%1$s»</string>
+    <string name="status_cleared">Серверы удалены</string>
+    <plurals name="status_restored">
+        <item quantity="one">Восстановлена %1$d группа</item>
+        <item quantity="few">Восстановлено %1$d группы</item>
+        <item quantity="many">Восстановлено %1$d групп</item>
+        <item quantity="other">Восстановлено %1$d группы</item>
+    </plurals>
+    <string name="status_save_failed">Не удалось сохранить: %1$s</string>
+
+    <plurals name="status_dups_removed">
+        <item quantity="one">Удалён %1$d дубликат</item>
+        <item quantity="few">Удалено %1$d дубликата</item>
+        <item quantity="many">Удалено %1$d дубликатов</item>
+        <item quantity="other">Удалено %1$d дубликата</item>
+    </plurals>
+    <string name="status_dups_none">Дубликатов нет</string>
+    <plurals name="status_dead_removed">
+        <item quantity="one">Удалён %1$d недоступный сервер</item>
+        <item quantity="few">Удалено %1$d недоступных сервера</item>
+        <item quantity="many">Удалено %1$d недоступных серверов</item>
+        <item quantity="other">Удалено %1$d недоступных сервера</item>
+    </plurals>
+    <string name="status_dead_none">Недоступных серверов нет</string>
+
+    <string name="status_testing">Проверено %1$d из %2$d…</string>
+    <plurals name="status_tested">
+        <item quantity="one">Проверен %1$d сервер</item>
+        <item quantity="few">Проверено %1$d сервера</item>
+        <item quantity="many">Проверено %1$d серверов</item>
+        <item quantity="other">Проверено %1$d сервера</item>
+    </plurals>
+    <string name="status_test_stopped">Проверка остановлена: %1$d из %2$d</string>
+</resources>
